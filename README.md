@@ -1,4 +1,4 @@
-# Landing Page Catwalk Couture Project 
+# Landing Page Project | Catwalk Couture Landing Page
 
 
 ## About the project 
