@@ -8,52 +8,112 @@
   <!-- Load Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
   <link href="css/styles.css" rel="stylesheet">
+
 </head>
 <body>
+  
   <!-- HTML Follows BEM naming conventions 
   IDs are only used for sections to connect menu achors to sections -->
   <header class="page__header">
     <nav class="navbar__menu">
+      <img class="navSiteLogo" src="assets/logo1.png">
+      </img>
       <!-- Navigation starts as empty UL that will be populated with JS -->
-      <ul id="navbar__list"></ul>
+      <ul id="navbar__list">
+   </ul>
     </nav>
   </header>
   <main>
-    <header class="main__hero">
-      <h1>Landing Page </h1>
+    <header class="main__hero" id="topSectionMain">
+     
+      <div class="sectionMain" >
+        <div class="mainInnerBox">
+          <img class="mainHeaderImage" src="assets/mainHeaderImage1.png">
+          </img>
+        </div><h2 id="mainHeaderFont">Catwalk Couture</h2><div>
     </header>
-    <!-- Each Section has an ID (used for the anchor) and 
+    <!--   
+       
+    Each Section has an ID (used for the anchor) and 
     a data attribute that will populate the li node.
     Adding more sections will automatically populate nav.
     The first section is set to active class by default -->
-    <section id="section1" data-nav="Section 1" class="your-active-class">
+    <section id="section1" data-nav="About Us" class="your-active-class">
       <div class="landing__container">
-        <h2>Section 1</h2>
+        <h2>About Us</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
 
         <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
       </div>
     </section>
-    <section id="section2" data-nav="Section 2">
+    <section id="section2" data-nav="Our Work">
       <div class="landing__container">
-        <h2>Section 2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+        <h2>Our Work</h2>
 
-        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
-      </div>
+        <div class="flexContainer">
+          <div class="flexBoxItem">
+            <img class="flexBoxItemImage" src="assets/pawPrintIcon.png"></img><h3>Title</h3>
+            <div class="flexBoxItemText"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, animi? Laboriosam, provident odit culpa ex natus eius voluptatem nisi, asperiores laudantium, nulla tempora aspernatur at deleniti commodi amet illum sit.
+            </div></div>
+          <div class="flexBoxItem">
+            <img class="flexBoxItemImage" src="assets/pawPrintIcon.png"></img><h3>Title</h3>
+            <div class="flexBoxItemText"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, animi? Laboriosam, provident odit culpa ex natus eius voluptatem nisi, asperiores laudantium, nulla tempora aspernatur at deleniti commodi amet illum sit.
+            </div></div>
+          <div class="flexBoxItem">
+            <img class="flexBoxItemImage" src="assets/pawPrintIcon.png"></img> <h3>Title</h3>
+            <div class="flexBoxItemText"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, animi? Laboriosam, provident odit culpa ex natus eius voluptatem nisi, asperiores laudantium, nulla tempora aspernatur at deleniti commodi amet illum sit.
+            </div></div>
+
+          
+        </div>
+           </div>
     </section>
-    <section id="section3" data-nav="Section 3">
+    <section id="section3" data-nav="Our Projects">
+      
+        <div class="landing__containerSect3">
+          <h2>Our Projects</h2>
+          <p>
+            <div id="projectContainer">
+            </div></div>
+    </section>
+
+    <section id="section4" data-nav="Connect With Us">
       <div class="landing__container">
-        <h2>Section 3</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
-
-        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
-      </div>
+        <h2 id="newsLetterSectionHeader">Sign up for our latest news</h2>
+        <p>
+        </p>
+        <h3 id="newsLetterSectionText">Join our newsletter to recieve all of the latest trends in XR</h3>
+        <form>
+          <input type="email" class="emailFormInput" placeholder="email@company.com">
+          <input type="submit" class="submitButton" value="Subscribe to Newsletter">
+        </form>
     </section>
-  </main>
+    
+    <div class="social_media_container">
+      <p class="social_media_text">Connect with us!</p>
+      <div class="social_media_icon_container">
+          <a class="iconBox" href="https://www.linkedin.com/in/heather-mcgee-cat">
+            <img class="iconImage" src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2012/png/iconmonstr-linkedin-3.png&r=0&g=0&b=0"></img></a>
+           
+            <a class="iconBox" href="https://www.youtube.com/@haleycatpawz/shorts">
+              <img class="iconImage" src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2013/png/iconmonstr-youtube-8.png&r=0&g=0&b=0"></img></a>
+          
+              <a class="iconBox" href="https://www.facebook.com/haleycatpawz/">
+                <img class="iconImage" src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2012/png/iconmonstr-facebook-3.png&r=0&g=0&b=0"></img></a>
+            </div>
+          </div>
+  </main> 
+
   <footer class="page__footer">
-    <p>&copy Udacity</p>
-  </footer>
+    <p> &copy Udacity  &copy Heather McGee 2024</p>
 
+</div>
+  </footer>
+  <button class="backToTopButton invisible" href="#topSectionMain">
+    <img class="backToTopButtonImage" src="assets/backToTopPaw2.png" href="#topSectionMain"></img>
+    </button>
+
+
+  <script defer src="js/app.js"></script>
 </body>
 </html>
